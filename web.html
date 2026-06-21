@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Techniqto — Ekstrakulikuler SMAN 47 Jakarta</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;600;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="web.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       NAV
+  ═══════════════════════════════════════════ -->
+  <nav class="nav" id="navbar">
+    <div class="nav__inner">
+      <a href="#hero" class="nav__logo">
+        <img src="logo-techniqto.jpeg" alt="Techniqto SMAN 47 Jakarta" class="nav__logo-img" />
+      </a>
+      <ul class="nav__links">
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#divisions">Divisi</a></li>
+        <li><a href="#career">Karier</a></li>
+        <li><a href="#repository">Repository</a></li>
+        <li><a href="#contact" class="nav__cta">Gabung</a></li>
+      </ul>
+      <button class="nav__burger" id="burger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" class="mobile-link">Tentang</a></li>
+      <li><a href="#divisions" class="mobile-link">Divisi</a></li>
+      <li><a href="#career" class="mobile-link">Karier</a></li>
+      <li><a href="#repository" class="mobile-link">Repository</a></li>
+      <li><a href="#contact" class="mobile-link">Gabung</a></li>
+    </ul>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <canvas class="hero__canvas" id="particleCanvas"></canvas>
+    <div class="hero__glow hero__glow--1"></div>
+    <div class="hero__glow hero__glow--2"></div>
+    <div class="hero__glow hero__glow--3"></div>
+
+    <div class="hero__content">
+      <p class="hero__eyebrow">
+        <span class="hero__eyebrow-line"></span>
+        Ekstrakulikuler SMAN 47 Jakarta
+        <span class="hero__eyebrow-line"></span>
+      </p>
+      <div class="hero__logo-img-wrap">
+        <img src="logo-techniqto.jpeg" alt="Techniqto SMAN 47 Jakarta" class="hero__logo-img" />
+      </div>
+      <p class="hero__tagline">
+        Tempat lahirnya inovator masa depan —<br />
+        di antara layar, kode, dan robot.
+      </p>
+      <div class="hero__badges">
+        <span class="badge badge--esport">Esport</span>
+        <span class="badge badge--robotik">Robotik</span>
+        <span class="badge badge--coding">Coding</span>
+      </div>
+      <div class="hero__actions">
+        <a href="#about" class="btn btn--primary">Jelajahi</a>
+        <a href="#repository" class="btn btn--ghost">GitHub Repo</a>
+      </div>
+    </div>
+
+    <div class="hero__scroll-hint">
+      <span>scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       ABOUT
+  ═══════════════════════════════════════════ -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__label">Tentang Kami</span>
+        <h2 class="section__title">Apa itu <span class="text-orange">Techniqto</span>?</h2>
+      </div>
+
+      <div class="about__grid">
+        <div class="about__text">
+          <p class="about__lead">
+            Techniqto adalah ekstrakulikuler teknologi unggulan yang bernaung di bawah
+            <strong>SMAN 47 Jakarta</strong>. Kami membangun ekosistem bagi siswa-siswi
+            yang bersemangat di dunia digital — dari arena kompetisi gaming profesional,
+            laboratorium robotika, hingga ruang pengembangan perangkat lunak.
+          </p>
+          <p class="about__body">
+            Didirikan dengan visi menjadi inkubator talenta teknologi tingkat sekolah
+            menengah, Techniqto menghadirkan pengalaman nyata yang melampaui kurikulum
+            standar. Anggota kami tidak hanya belajar — mereka membangun, berkompetisi,
+            dan berinovasi.
+          </p>
+          <div class="about__stats">
+            <div class="stat">
+              <span class="stat__number" data-target="3">0</span>
+              <span class="stat__label">Divisi Aktif</span>
+            </div>
+            <div class="stat">
+              <span class="stat__number" data-target="70"></span>
+              <span class="stat__label">Anggota</span>
+            </div>
+            <div class="stat">
+              <span class="stat__number" data-target="12">0</span>
+              <span class="stat__label">Proyek Selesai</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about__visual">
+          <div class="about__card-stack">
+            <div class="about__card about__card--back"></div>
+            <div class="about__card about__card--mid"></div>
+            <div class="about__card about__card--front">
+              <div class="about__card-content">
+                <div class="about__card-logo">
+                  <img src="logo-techniqto.jpeg" alt="Logo Techniqto" class="about__card-logo-img" />
+                </div>
+                <div class="about__card-divider"></div>
+                <p class="about__card-quote">"Inovasi tanpa batas, kolaborasi tanpa henti."</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       DIVISIONS
+  ═══════════════════════════════════════════ -->
+  <section class="section divisions" id="divisions">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__label">Divisi Kami</span>
+        <h2 class="section__title">Tiga Pilar <span class="text-orange">Techniqto</span></h2>
+        <p class="section__subtitle">
+          Setiap divisi adalah dunia tersendiri — dengan komunitas, kompetisi, dan pencapaiannya sendiri.
+        </p>
+      </div>
+
+      <div class="divisions__grid">
+
+        <!-- ESPORT -->
+        <div class="division-card" data-division="esport">
+          <div class="division-card__scan"></div>
+          <div class="division-card__glow"></div>
+          <div class="division-card__icon">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="8" y="20" width="48" height="28" rx="6" stroke="currentColor" stroke-width="2.5"/>
+              <path d="M20 34H28M24 30V38" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              <circle cx="42" cy="32" r="2" fill="currentColor"/>
+              <circle cx="38" cy="36" r="2" fill="currentColor"/>
+              <circle cx="46" cy="36" r="2" fill="currentColor"/>
+              <path d="M24 48V56M40 48V56M18 56H46" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="division-card__title">Esport</h3>
+          <p class="division-card__desc">
+            Arena kompetisi gaming profesional. Kami mengikuti turnamen lokal hingga nasional,
+            mengembangkan strategi tim, mental juara, dan disiplin bermain pada level tertinggi.
+          </p>
+          <ul class="division-card__tags">
+            <li>Mobile Legends</li>
+            <li>Turnamen Antar Sekolah</li>
+          </ul>
+          <div class="division-card__footer">
+            <span class="division-card__number">01</span>
+          </div>
+        </div>
+
+        <!-- ROBOTIK -->
+        <div class="division-card division-card--featured" data-division="robotik">
+          <div class="division-card__scan"></div>
+          <div class="division-card__glow"></div>
+          <div class="division-card__icon">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="18" y="24" width="28" height="24" rx="4" stroke="currentColor" stroke-width="2.5"/>
+              <rect x="26" y="16" width="12" height="10" rx="3" stroke="currentColor" stroke-width="2.5"/>
+              <circle cx="26" cy="34" r="3" fill="currentColor"/>
+              <circle cx="38" cy="34" r="3" fill="currentColor"/>
+              <path d="M26 40H38" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M18 36H12M46 36H52" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M12 34V38M52 34V38" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="32" cy="20" r="2" fill="currentColor"/>
+            </svg>
+          </div>
+          <div class="division-card__badge">Flagship</div>
+          <h3 class="division-card__title">Robotik</h3>
+          <p class="division-card__desc">
+            Merancang, membangun, dan memprogram robot dari nol. Divisi ini menggabungkan
+            rekayasa mekanik, elektronika, dan pemrograman embedded dalam satu pengalaman
+            yang tak tertandingi.
+          </p>
+          <ul class="division-card__tags">
+            <li>Arduino</li>
+            <li>Raspberry Pi</li>
+            <li>KRI / KRCI</li>
+            <li>Line Follower</li>
+          </ul>
+          <div class="division-card__footer">
+            <span class="division-card__number">02</span>
+          </div>
+        </div>
+
+        <!-- CODING -->
+        <div class="division-card" data-division="coding">
+          <div class="division-card__scan"></div>
+          <div class="division-card__glow"></div>
+          <div class="division-card__icon">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="8" y="12" width="48" height="36" rx="4" stroke="currentColor" stroke-width="2.5"/>
+              <path d="M8 20H56" stroke="currentColor" stroke-width="2.5"/>
+              <circle cx="16" cy="16" r="2" fill="currentColor"/>
+              <circle cx="22" cy="16" r="2" fill="currentColor"/>
+              <circle cx="28" cy="16" r="2" fill="currentColor"/>
+              <path d="M20 30L16 34L20 38" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M44 30L48 34L44 38" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M36 28L28 40" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M24 52H40M32 48V52" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="division-card__title">Coding</h3>
+          <p class="division-card__desc">
+            Dari web development hingga competitive programming. Anggota kami membangun
+            aplikasi nyata, belajar algoritma lanjutan, dan siap menghadapi olimpiade
+            informatika tingkat nasional.
+          </p>
+          <ul class="division-card__tags">
+            <li>Web Dev</li>
+            <li>Python / C++</li>
+            <li>Competitive Programming</li>
+          </ul>
+          <div class="division-card__footer">
+            <span class="division-card__number">03</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       CAREER / TIMELINE
+  ═══════════════════════════════════════════ -->
+  <section class="section career" id="career">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__label">Perjalanan</span>
+        <h2 class="section__title">Karier <span class="text-orange">Eskul</span></h2>
+        <p class="section__subtitle">
+          Setiap pencapaian adalah batu loncatan menuju yang lebih besar.
+        </p>
+      </div>
+
+      <div class="timeline">
+
+        <div class="timeline__item timeline__item--left" data-aos="fade-right">
+          <div class="timeline__dot"></div>
+          <div class="timeline__card">
+            <span class="timeline__year">2025</span>
+            <h3 class="timeline__event">Pendirian Techniqto</h3>
+            <p class="timeline__desc">
+              Techniqto resmi berdiri sebagai ekstrakulikuler teknologi di SMAN 47 Jakarta
+              dengan tiga divisi utama: Esport, Robotik, dan Coding.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline__item timeline__item--right" data-aos="fade-left">
+          <div class="timeline__dot"></div>
+          <div class="timeline__card">
+            <span class="timeline__year">2025</span>
+            <h3 class="timeline__event">Juara 1 Apple Swift Challange</h3>
+            <p class="timeline__desc">
+              Apple Swift Student Challenge merupakan kompetisi pemrograman dan inovasi teknologi tingkat global yang diselenggarakan langsung oleh Apple. Ajang bergengsi ini menantang para pelajar dan developer muda dari seluruh dunia untuk menciptakan proyek aplikasi interaktif orisinal menggunakan bahasa pemrograman Swift. Penilaian difokuskan pada aspek kreativitas, kualitas teknis kode, fungsionalitas, serta desain antarmuka pengguna. Keberhasilan meraih peringkat pertama dalam kompetisi ini diraih setelah bersaing dengan ribuan peserta internasional dan berhasil memikat dewan juri Apple melalui solusi digital yang inovati
+            </p>
+            <span class="timeline__badge">🏆 Prestasi</span>
+          </div>
+        </div>
+
+        <div class="timeline__item timeline__item--left" data-aos="fade-right">
+          <div class="timeline__dot"></div>
+          <div class="timeline__card">
+            <span class="timeline__year">2023</span>
+            <h3 class="timeline__event">Peluncuran Platform GitHub</h3>
+            <p class="timeline__desc">
+              Divisi Coding meluncurkan repository kolaboratif di GitHub sebagai pusat
+              dokumentasi dan proyek open-source anggota Techniqto.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline__item timeline__item--right" data-aos="fade-left">
+          <div class="timeline__dot"></div>
+          <div class="timeline__card">
+            <span class="timeline__year">2024</span>
+            <h3 class="timeline__event">Esport Goes Competitive</h3>
+            <p class="timeline__desc">
+              Divisi Esport mendaftarkan tim pertama ke turnamen antar-sekolah tingkat
+              nasional. Pengalaman yang membentuk mentalitas juara generasi berikutnya.
+            </p>
+            <span class="timeline__badge">🎮 Milestone</span>
+          </div>
+        </div>
+
+        <div class="timeline__item timeline__item--left" data-aos="fade-right">
+          <div class="timeline__dot"></div>
+          <div class="timeline__card">
+            <span class="timeline__year">2025</span>
+            <h3 class="timeline__event">Workshop & Rekrutmen Terbuka</h3>
+            <p class="timeline__desc">
+              Techniqto mengadakan sesi workshop terbuka untuk siswa baru, mengenalkan
+              dunia teknologi melalui hands-on session robotika dan coding dasar.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline__item timeline__item--right" data-aos="fade-left">
+          <div class="timeline__dot timeline__dot--active"></div>
+          <div class="timeline__card timeline__card--active">
+            <span class="timeline__year">2026</span>
+            <h3 class="timeline__event">Era Baru Techniqto</h3>
+            <p class="timeline__desc">
+              Dengan website resmi, struktur divisi yang semakin kuat, dan semangat
+              anggota yang membara — Techniqto siap mendominasi panggung teknologi
+              sekolah menengah Jakarta.
+            </p>
+            <span class="timeline__badge timeline__badge--now">✦ Sekarang</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       REPOSITORY
+  ═══════════════════════════════════════════ -->
+  <section class="section repository" id="repository">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__label">Open Source</span>
+        <h2 class="section__title">File <span class="text-orange">Repository</span></h2>
+        <p class="section__subtitle">
+          Semua proyek kami terbuka. Pelajari, fork, dan kontribusi.
+        </p>
+      </div>
+
+      <div class="repo__grid">
+
+        <div class="repo-card">
+          <div class="repo-card__header">
+            <div class="repo-card__icon repo-card__icon--web">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M2 12H22M12 2C9.33 7 8 9.33 8 12C8 14.67 9.33 17 12 22C14.67 17 16 14.67 16 12C16 9.33 14.67 7 12 2Z" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <span class="repo-card__lang">HTML · CSS · JS</span>
+          </div>
+          <h3 class="repo-card__name">techniqto-website</h3>
+          <p class="repo-card__desc">Source code website resmi Techniqto SMAN 47 Jakarta. Dibangun dari nol oleh divisi Coding.</p>
+          <div class="repo-card__meta">
+            <span class="repo-card__star">★ 24</span>
+            <span class="repo-card__fork">⑂ 8</span>
+          </div>
+          <a href="https://github.com/techniqto-sman47" target="_blank" rel="noopener" class="repo-card__link">
+            Lihat di GitHub
+            <svg viewBox="0 0 16 16" fill="currentColor"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.75.75 0 0 1-1.5 0V2.56l-3.97 3.97a.75.75 0 0 1-1.06-1.06l3.97-3.97h-1.586a.75.75 0 0 1 0-1.5Z"/></svg>
+          </a>
+        </div>
+
+        <div class="repo-card">
+          <div class="repo-card__header">
+            <div class="repo-card__icon repo-card__icon--robot">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="7" y="9" width="10" height="9" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                <rect x="9" y="5" width="6" height="5" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="10" cy="13" r="1" fill="currentColor"/>
+                <circle cx="14" cy="13" r="1" fill="currentColor"/>
+                <path d="M7 13H5M17 13H19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <span class="repo-card__lang">C++ · Arduino</span>
+          </div>
+          <h3 class="repo-card__name">techniqto-robotics</h3>
+          <p class="repo-card__desc">Kumpulan kode untuk proyek robotika — dari line follower hingga arm robot dengan sensor ultrasonik.</p>
+          <div class="repo-card__meta">
+            <span class="repo-card__star">★ 17</span>
+            <span class="repo-card__fork">⑂ 5</span>
+          </div>
+          <a href="https://github.com/techniqto-sman47" target="_blank" rel="noopener" class="repo-card__link">
+            Lihat di GitHub
+            <svg viewBox="0 0 16 16" fill="currentColor"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.75.75 0 0 1-1.5 0V2.56l-3.97 3.97a.75.75 0 0 1-1.06-1.06l3.97-3.97h-1.586a.75.75 0 0 1 0-1.5Z"/></svg>
+          </a>
+        </div>
+
+        <div class="repo-card">
+          <div class="repo-card__header">
+            <div class="repo-card__icon repo-card__icon--algo">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <polyline points="16 18 22 12 16 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <polyline points="8 6 2 12 8 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <span class="repo-card__lang">Python · C++</span>
+          </div>
+          <h3 class="repo-card__name">techniqto-cp-archive</h3>
+          <p class="repo-card__desc">Arsip solusi competitive programming dari anggota Techniqto — Codeforces, LeetCode, OSN Informatika.</p>
+          <div class="repo-card__meta">
+            <span class="repo-card__star">★ 31</span>
+            <span class="repo-card__fork">⑂ 12</span>
+          </div>
+          <a href="https://github.com/techniqto-sman47" target="_blank" rel="noopener" class="repo-card__link">
+            Lihat di GitHub
+            <svg viewBox="0 0 16 16" fill="currentColor"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.75.75 0 0 1-1.5 0V2.56l-3.97 3.97a.75.75 0 0 1-1.06-1.06l3.97-3.97h-1.586a.75.75 0 0 1 0-1.5Z"/></svg>
+          </a>
+        </div>
+
+        <div class="repo-card repo-card--github-cta">
+          <div class="repo-card__github-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+            </svg>
+          </div>
+          <h3 class="repo-card__name">Kunjungi GitHub Kami</h3>
+          <p class="repo-card__desc">Semua repository, proyek, dan kontribusi anggota tersedia di GitHub Organisation Techniqto.</p>
+          <a href="https://github.com/techniqto-sman47" target="_blank" rel="noopener" class="btn btn--primary btn--full">
+            github.com/techniqto-sman47
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       CONTACT / JOIN
+  ═══════════════════════════════════════════ -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="contact__inner">
+        <div class="contact__glow"></div>
+        <span class="section__label">Bergabung</span>
+        <h2 class="contact__title">
+          Siap Jadi Bagian<br />dari <span class="text-orange">Techniqto</span>?
+        </h2>
+        <p class="contact__desc">
+          Buka untuk siswa-siswi SMAN 47 Jakarta yang ingin berkembang di dunia teknologi.
+          Tidak perlu pengalaman sebelumnya — hanya semangat dan keingintahuan.
+        </p>
+        <div class="contact__channels">
+          <a href="https://www.instagram.com/techniqto?igsh=NHZ4dndlZDV0c3li" class="contact-chip contact-chip--ig" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+            Instagram
+          </a>
+          <a href="mailto:tecniqto@gmail.com" class="contact-chip contact-chip--email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            Email
+          </a>
+        </div>
+        <p class="contact__school">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          SMAN 47 Jakarta — Jl. Delman Utama I No.1, RT.1/RW.11, Kby. Lama Utara, Kec. Kebayoran Lama, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12240
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <img src="logo-techniqto.jpeg" alt="Logo Techniqto" class="footer__logo-img" />
+          <p>Ekstrakulikuler Teknologi<br/>SMAN 47 Jakarta</p>
+        </div>
+        <div class="footer__nav">
+          <a href="#about">Tentang</a>
+          <a href="#divisions">Divisi</a>
+          <a href="#career">Karier</a>
+          <a href="#repository">Repository</a>
+        </div>
+        <div class="footer__copy">
+          <p>© 2026 Techniqto SMAN 47 Jakarta.</p>
+          <p>Made with ✦ by Divisi Coding.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="web.js"></script>
+</body>
+</html>
