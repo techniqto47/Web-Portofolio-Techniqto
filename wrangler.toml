@@ -1,5 +1,4 @@
 name = "techniqto47"
-main = "web.html"
 
 [assets]
 directory = "./"     # Mengarah ke folder utama proyek
