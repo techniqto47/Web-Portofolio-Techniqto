@@ -1,6 +1,6 @@
-name = "Web-Portofolio-Techniqto"
+name = "techniqto47"
 main = "web.html"
 
 [assets]
-directory = "./"    
+directory = "./"     # Mengarah ke folder utama proyek
 binding = "ASSETS"
