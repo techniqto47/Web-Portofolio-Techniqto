@@ -2,4 +2,3 @@ name = "techniqto47"
 
 [assets]
 directory = "./"     # Mengarah ke folder utama proyek
-binding = "ASSETS"
