@@ -455,3 +455,93 @@
 
   animateGlow();
 })();
+
+
+/* ─── GALLERY LIGHTBOX ───────────────────────────────── */
+(function initGalleryLightbox() {
+  const galleryItems = document.querySelectorAll('.gallery__item');
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImage = document.getElementById('lightboxImage');
+  const lightboxClose = document.getElementById('lightboxClose');
+  const lightboxPrev = document.getElementById('lightboxPrev');
+  const lightboxNext = document.getElementById('lightboxNext');
+
+  if (!galleryItems.length) return;
+
+  let currentIndex = 0;
+  const images = Array.from(galleryItems).map(item => item.dataset.image);
+
+  function openLightbox(index) {
+    currentIndex = index;
+    lightboxImage.src = images[currentIndex];
+    lightbox.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLightbox() {
+    lightbox.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  function showNext() {
+    currentIndex = (currentIndex + 1) % images.length;
+    lightboxImage.src = images[currentIndex];
+  }
+
+  function showPrev() {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    lightboxImage.src = images[currentIndex];
+  }
+
+  // Event listeners
+  galleryItems.forEach((item, index) => {
+    item.addEventListener('click', () => openLightbox(index));
+  });
+
+  lightboxClose.addEventListener('click', closeLightbox);
+  lightboxNext.addEventListener('click', showNext);
+  lightboxPrev.addEventListener('click', showPrev);
+
+  // Keyboard navigation
+  document.addEventListener('keydown', (e) => {
+    if (!lightbox.classList.contains('open')) return;
+
+    if (e.key === 'ArrowRight') showNext();
+    if (e.key === 'ArrowLeft') showPrev();
+    if (e.key === 'Escape') closeLightbox();
+  });
+
+  // Close on background click
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) closeLightbox();
+  });
+
+  // Stagger gallery items animation
+  galleryItems.forEach((item, i) => {
+    item.style.opacity = '0';
+    item.style.transform = 'translateY(24px)';
+    item.style.transition = 'opacity 0.6s var(--ease-out), transform 0.6s var(--ease-out)';
+  });
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const item = entry.target;
+          const delay = parseFloat(item.dataset.delay || 0);
+          setTimeout(() => {
+            item.style.opacity = '1';
+            item.style.transform = 'translateY(0)';
+          }, delay);
+          observer.unobserve(item);
+        }
+      });
+    },
+    { threshold: 0.15 }
+  );
+
+  galleryItems.forEach((item, i) => {
+    item.dataset.delay = i * 120;
+    observer.observe(item);
+  });
+})();

@@ -24,6 +24,7 @@
         <li><a href="#about">Tentang</a></li>
         <li><a href="#divisions">Divisi</a></li>
         <li><a href="#career">Karier</a></li>
+        <li><a href="#gallery">Galeri</a></li>
         <li><a href="#repository">Repository</a></li>
         <li><a href="#contact" class="nav__cta">Gabung</a></li>
       </ul>
@@ -39,6 +40,7 @@
       <li><a href="#about" class="mobile-link">Tentang</a></li>
       <li><a href="#divisions" class="mobile-link">Divisi</a></li>
       <li><a href="#career" class="mobile-link">Karier</a></li>
+      <li><a href="#gallery" class="mobile-link">Galeri</a></li>
       <li><a href="#repository" class="mobile-link">Repository</a></li>
       <li><a href="#contact" class="mobile-link">Gabung</a></li>
     </ul>
@@ -117,7 +119,7 @@
               <span class="stat__label">Anggota</span>
             </div>
             <div class="stat">
-              <span class="stat__number" data-target="4">0</span>
+              <span class="stat__number" data-target="5">0</span>
               <span class="stat__label">Proyek Selesai</span>
             </div>
           </div>
@@ -347,6 +349,82 @@
       </div>
     </div>
   </section>
+
+  <!-- ═══════════════════════════════════════════
+       GALLERY
+  ═══════════════════════════════════════════ -->
+  <section class="section gallery" id="gallery">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__label">Dokumentasi</span>
+        <h2 class="section__title">Galeri <span class="text-orange">Momen Techniqto</span></h2>
+        <p class="section__subtitle">
+          Setiap foto adalah bukti dedikasi dan kolaborasi tim Techniqto dalam berbagai acara dan kompetisi.
+        </p>
+      </div>
+
+      <div class="gallery__grid">
+        <div class="gallery__item" data-image="GALERI TECHNIQTO/APPLE SWIFT WORKSHOP.png">
+          <img src="GALERI TECHNIQTO/APPLE SWIFT WORKSHOP.png" alt="Apple Swift Workshop" class="gallery__img" />
+          <div class="gallery__overlay">
+            <span class="gallery__icon">🔍</span>
+          </div>
+        </div>
+
+        <div class="gallery__item" data-image="GALERI TECHNIQTO/FARREL APPLE.PNG">
+          <img src="GALERI TECHNIQTO/FARREL APPLE.PNG" alt="Anggota di Apple Developer Academy" class="gallery__img" />
+          <div class="gallery__overlay">
+            <span class="gallery__icon">🔍</span>
+          </div>
+        </div>
+
+        <div class="gallery__item" data-image="GALERI TECHNIQTO/JAURA TECHNIQTO.png">
+          <img src="GALERI TECHNIQTO/JAURA TECHNIQTO.png" alt="Juara Turnamen Techniqto" class="gallery__img" />
+          <div class="gallery__overlay">
+            <span class="gallery__icon">🔍</span>
+          </div>
+        </div>
+
+        <div class="gallery__item" data-image="GALERI TECHNIQTO/JUARA TECHNIQTO#2.png">
+          <img src="GALERI TECHNIQTO/JUARA TECHNIQTO#2.png" alt="Juara Kompetisi Techniqto" class="gallery__img" />
+          <div class="gallery__overlay">
+            <span class="gallery__icon">🔍</span>
+          </div>
+        </div>
+
+        <div class="gallery__item" data-image="GALERI TECHNIQTO/WhatsApp Image 2026-06-21 at 1.46.14 PM (2).jpeg">
+          <img src="GALERI TECHNIQTO/WhatsApp Image 2026-06-21 at 1.46.14 PM (2).jpeg" alt="Esport Event - Spectra 2026" class="gallery__img" />
+          <div class="gallery__overlay">
+            <span class="gallery__icon">🔍</span>
+          </div>
+        </div>
+
+        <div class="gallery__item" data-image="GALERI TECHNIQTO/WhatsApp Image 2026-06-21 at 1.46.14 PM.jpeg">
+          <img src="GALERI TECHNIQTO/WhatsApp Image 2026-06-21 at 1.46.14 PM.jpeg" alt="Tim Robotik Techniqto" class="gallery__img" />
+          <div class="gallery__overlay">
+            <span class="gallery__icon">🔍</span>
+          </div>
+        </div>
+
+        <div class="gallery__item" data-image="GALERI TECHNIQTO/WhatsApp Image 2026-06-21 at 1.46.31 PM.jpeg">
+          <img src="GALERI TECHNIQTO/WhatsApp Image 2026-06-21 at 1.46.31 PM.jpeg" alt="Robotik Competition Award" class="gallery__img" />
+          <div class="gallery__overlay">
+            <span class="gallery__icon">🔍</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Lightbox Modal -->
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox__content">
+      <button class="lightbox__close" id="lightboxClose">✕</button>
+      <button class="lightbox__nav lightbox__prev" id="lightboxPrev">‹</button>
+      <img id="lightboxImage" src="" alt="" class="lightbox__image" />
+      <button class="lightbox__nav lightbox__next" id="lightboxNext">›</button>
+    </div>
+  </div>
 
   <!-- ═══════════════════════════════════════════
        REPOSITORY
