@@ -1,0 +1,6 @@
+name = "Web-Portofolio-Techniqto"
+main = "src/web.html"
+
+[assets]
+directory = "./dist"
+binding = "ASSETS"
