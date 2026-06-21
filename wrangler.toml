@@ -1,4 +1,5 @@
 name = "techniqto47"
+compatibility_date = "2026-06-21"
 
 [assets]
 directory = "./"     # Mengarah ke folder utama proyek
